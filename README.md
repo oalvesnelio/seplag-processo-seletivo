@@ -1,19 +1,37 @@
+# Informações
+
+- Nome: Nélio Souza Alves
+- E-mail: nelio13alves@gmail.com
+- Cargo: Análista de tecnologia da informação
+- Perfil profissional: Desenvolvedor PHP
+
+> Observação: Para o desenvolvimento da API foi utilizado o API-Platform.
+
+- Como testar a aplicação?
+  - Requisitos: Docker
+  - Passo a passo
+    - Clonar o repositorio
+    - Executar o comando: `docker compose up --wait`
+    - Acessar o localshot: `https://localhost`
+    - Acessar a página de admin caso queira utilzar o admin para realizar os cadastros.
+    - Acessar a api caso queiram cadastrar os dados via API.
+
 # Requisitos gerais da prova
 
 - A. Implementar mecanismo de autorização e autenticação, bem como não permitir acesso ao endpoint a partir de domínios diversos do qual estará hospedado o serviço;
 - B. A solução de autenticação deverá expirar a cada 5 minutos e oferecer a possibilidade de renovação do período;
-- C. Implementar pelo menos os verbos post, put, get;
-- D. Conter recursos de paginação em todas as consultas;
-- E. Os dados produzidos deverão ser armazenados no servidor de banco de dados previamente criado em container;
-- F. Orquestrar a solução final utilizando Docker Compose de modo que inclua todos os contêineres utilizados.
+- C. ~~Implementar pelo menos os verbos post, put, get;~~
+- D. ~~Conter recursos de paginação em todas as consultas;~~
+- E. ~~Os dados produzidos deverão ser armazenados no servidor de banco de dados previamente criado em container;~~
+- F. ~~Orquestrar a solução final utilizando Docker Compose de modo que inclua todos os contêineres utilizados.~~
 
 # Requisitos Específicos
 
-- Implementar uma API Rest para o diagrama de banco de dados acima tomando por base as seguintes orientações:
-- Criar um CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação. Deverá ser contemplado a inclusão e edição dos dados das tabelas relacionadas;
-- Criar um endpoint que permita consultar os servidores efetivos lotados em determinada unidade parametrizando a consulta pelo atributo unid_id;
-   - Retornar os seguintes campos: Nome, idade, unidade de lotação e fotografia;
-- Criar um endpoint que permita consultar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo.
+- ~~Implementar uma API Rest para o diagrama de banco de dados acima tomando por base as seguintes orientações:~~
+- ~~Criar um CRUD para Servidor Efetivo, Servidor Temporário, Unidade e Lotação. Deverá ser contemplado a inclusão e edição dos dados das tabelas relacionadas;~~
+- ~~Criar um endpoint que permita consultar os servidores efetivos lotados em determinada unidade parametrizando a consulta pelo atributo unid_id;~~
+   - ~~Retornar os seguintes campos: Nome, idade, unidade de lotação e fotografia;~~
+- ~~Criar um endpoint que permita consultar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo.~~
 - Realizar o upload de uma ou mais fotografias enviando-as para o Min.IO;
 - A recuperação das imagens deverá ser através de links temporários gerados pela biblioteca do Min.IO com tempo de expiração de 5 minutos.
 
